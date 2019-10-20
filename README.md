@@ -19,7 +19,7 @@ La información del valor de las divisas se obtendrá consultando de manera recu
 Se utilizaría RUBY en el desarrollo de los servicios por la facilidad de desarrollo y la gran cantidad de material de apoyo que hay en la red. Esto se confirmará a medida que avance el curso
 
 ## Base de datos
-Para el almacenamiento se utilizará una BD NoSQL como mongoDB independiente pada cada microservicio. Esto para obtener mejores tiempos de respuesta (Esto se confirmará a medida que avance el curso)
+Para el almacenamiento se utilizará una BD NoSQL como mongoDB independiente pada cada microservicio. Esto para obtener mejores tiempos de respuesta (Esto se confirmará a medida que avance el curso).
 
 
 
