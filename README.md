@@ -13,6 +13,10 @@ El alcance del proyecto es solo la construcción del backend del sistema. La inf
 
 ## Arquitectura
 La aplicación será desarrollada siguiendo una arquitectura de [microservicios](https://en.wikipedia.org/wiki/Microservices). Las peticiones de clientes serán recibidas por un API Gateway REST utilizando JSON. Dicho Gateway enrutará las peticiones al microservicio que corresponda. 
+Se construirán 3 microservicios:
+User Accounts: Responsable de la alta, modificación y baja de cuentas de usuario.
+Exchanges Rates: Responsable de consumir la API REST que proveerá la información de las divisas y poblará la BD con dicha información.
+Trande: Responsable de calcular las tendencias de los valores de las divisas con la información provista por el microservicio “Exchange Rates” el que será consultado a través de API REST.
 La información del valor de las divisas se obtendrá consultando de manera recurrente la API REST de [Free Forex API](https://www.freeforexapi.com/) de manera agendada cada 15 segundos.
 ![Arquitectura](docs/image/arquitectura.png "Arquitectura")
 
