@@ -1,3 +1,4 @@
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ![Forex Alert](docs/image/forexalert.jpeg "Forex Alert")
 Proyecto CC: Sistema de cálculo de tendencias en el mercado de divisas
 ***
@@ -27,6 +28,6 @@ Los microservicios se comunicarán mediante envío de mensajes REST JSON.
 ## Test
 Para el desarrollo basado en test se aplicarán distintas pruebas en cada microservicio usando [PyTest](https://docs.pytest.org/en/latest/). 
  
-##Servicios 
+## Servicios 
 Cada microservicio generará log, para esto se usará logging y syslog para centralizar la información.
 
