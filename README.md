@@ -1,4 +1,4 @@
-# Forex-Alert 
+![Forex Alert](docs/image/forexalert.jpeg "Forex Alert")
 Proyecto CC: Sistema de cálculo de tendencias en el mercado de divisas
 ***
 ## Descripción del proyecto 
@@ -16,13 +16,17 @@ La información del valor de las divisas se obtendrá consultando de manera recu
 ![Arquitectura](docs/image/arquitectura.png "Arquitectura")
 
 ## Lenguaje
-Se utilizaría RUBY en el desarrollo de los servicios por la facilidad de desarrollo y la gran cantidad de material de apoyo que hay en la red. Esto se confirmará a medida que avance el curso
+Los microservicios serán construidos en Python 3, debido a la gran cantidad de material de apoyo existente en la red y la facilidad que ofrece de implementar scripts.
 
 ## Base de datos
-Para el almacenamiento se utilizará una BD NoSQL como mongoDB independiente pada cada microservicio. Esto para obtener mejores tiempos de respuesta (Esto se confirmará a medida que avance el curso).
+Para el almacenamiento se utilizará una BD NoSQL como mongoDB independiente para los servicios de cuentas de usuario y los valores de las divisas. Esto debido a que este motor de base de datos a sido de gran aceptación en las soluciones empresariales en los últimos años.
 
-
-
-
-
+## Comunicación
+Los microservicios se comunicarán mediante envío de mensajes REST JSON.
+ 
+## Test
+Para el desarrollo basado en test se aplicarán distintas pruebas en cada microservicio usando [PyTest](https://docs.pytest.org/en/latest/). 
+ 
+##Servicios 
+Cada microservicio generará log, para esto se usará logging y syslog para centralizar la información.
 
